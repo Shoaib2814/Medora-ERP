@@ -41,98 +41,101 @@
   <div id="landingPage" class="flex-1 flex flex-col bg-slate-950 text-white relative overflow-hidden">
     
     <!-- Background Radial Blur Effects -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-emerald-500/10 blur-[140px] pointer-events-none rounded-full"></div>
-    <div class="absolute bottom-10 right-10 w-[500px] h-[500px] bg-teal-500/5 blur-[160px] pointer-events-none rounded-full"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[800px] h-[300px] md:h-[400px] bg-emerald-500/10 blur-[100px] md:blur-[140px] pointer-events-none rounded-full"></div>
+    <div class="absolute bottom-10 right-10 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-teal-500/5 blur-[120px] md:blur-[160px] pointer-events-none rounded-full"></div>
 
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/60 px-6 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <!-- MEDORA BRAND LOGO -->
-        <img src="images/logo.png" onerror="this.src='Medora Medical Brand Logo.png'" alt="Medora Logo" class="w-11 h-11 rounded-2xl object-cover border border-emerald-500/30 shadow-lg shadow-emerald-500/20" />
-        <div>
-          <h1 class="font-extrabold text-2xl tracking-tight text-white leading-none">Medora</h1>
-          <p class="text-[10px] text-emerald-400 uppercase tracking-widest font-extrabold mt-1">Smarter Pharmacy. Better Business</p>
+    <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-xl border-b border-slate-800/60 px-4 md:px-6 py-3 md:py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-start">
+        <div class="flex items-center gap-3">
+          <!-- MEDORA BRAND LOGO -->
+          <img src="images/logo.png" onerror="this.src='Medora Medical Brand Logo.png'" alt="Medora Logo" class="w-9 h-9 md:w-11 md:h-11 rounded-xl md:rounded-2xl object-cover border border-emerald-500/30 shadow-lg shadow-emerald-500/20" />
+          <div>
+            <h1 class="font-extrabold text-xl md:text-2xl tracking-tight text-white leading-none">Medora</h1>
+            <p class="text-[9px] md:text-[10px] text-emerald-400 uppercase tracking-widest font-extrabold mt-0.5">Smarter Pharmacy. Better Business</p>
+          </div>
         </div>
       </div>
-      <div class="flex items-center gap-3">
-        <button onclick="openAuthModal('login')" class="px-5 py-2.5 rounded-xl text-xs font-bold text-slate-200 bg-slate-900 hover:bg-slate-800 border border-slate-800 transition">
-          <i class="fa-solid fa-right-to-bracket mr-1.5 text-emerald-400"></i> Pharmacy Sign In
+
+      <div class="flex items-center gap-2 md:gap-3 w-full sm:w-auto justify-end">
+        <button onclick="openAuthModal('login')" class="flex-1 sm:flex-none px-3.5 md:px-5 py-2 md:py-2.5 rounded-xl text-xs font-bold text-slate-200 bg-slate-900 hover:bg-slate-800 border border-slate-800 transition text-center">
+          <i class="fa-solid fa-right-to-bracket mr-1 text-emerald-400"></i> Sign In
         </button>
-        <button onclick="openAuthModal('register')" class="px-5 py-2.5 rounded-xl text-xs font-black text-slate-950 bg-emerald-400 hover:bg-emerald-300 transition shadow-lg shadow-emerald-500/25">
-          <i class="fa-solid fa-user-plus mr-1.5"></i> Register Pharmacy
+        <button onclick="openAuthModal('register')" class="flex-1 sm:flex-none px-3.5 md:px-5 py-2 md:py-2.5 rounded-xl text-xs font-black text-slate-950 bg-emerald-400 hover:bg-emerald-300 transition shadow-lg shadow-emerald-500/25 text-center">
+          <i class="fa-solid fa-user-plus mr-1"></i> Register
         </button>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative px-6 py-20 md:py-28 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      <div class="lg:col-span-7 space-y-8">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card border border-emerald-500/30 text-emerald-400 text-xs font-bold">
+    <section class="relative px-4 md:px-6 py-10 md:py-28 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
+      <div class="lg:col-span-7 space-y-5 md:space-y-8 text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1 md:px-3.5 md:py-1.5 rounded-full glass-card border border-emerald-500/30 text-emerald-400 text-[11px] md:text-xs font-bold">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           Everyday Medical Store Management Platform
         </div>
         
-        <h2 class="text-4xl md:text-6xl font-black text-white leading-none tracking-tight">
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-black text-white leading-tight tracking-tight">
           Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">Medora</span> ERP
         </h2>
 
-        <p class="text-slate-400 text-sm md:text-base leading-relaxed max-w-2xl font-normal">
+        <p class="text-slate-400 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl font-normal">
           <strong class="text-slate-200">Smarter Pharmacy. Better Business.</strong> Medora is an enterprise-grade retail POS and inventory management system designed for medical stores. Features instant tablet billing, dynamic thermal receipts, automated margin costing, 30-day expiry notifications, and supplier WhatsApp ordering.
         </p>
 
         <!-- Feature Badges -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs text-slate-300 font-semibold">
-          <div class="glass-card p-3.5 rounded-2xl flex items-center gap-3">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 md:gap-3 pt-1 md:pt-2 text-xs text-slate-300 font-semibold">
+          <div class="glass-card p-3 md:p-3.5 rounded-xl md:rounded-2xl flex items-center gap-3">
             <i class="fa-solid fa-receipt text-emerald-400 text-base"></i> Auto-Fit Receipts
           </div>
-          <div class="glass-card p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="glass-card p-3 md:p-3.5 rounded-xl md:rounded-2xl flex items-center gap-3">
             <i class="fa-solid fa-triangle-exclamation text-amber-400 text-base"></i> 30-Day Expiry Alerts
           </div>
-          <div class="glass-card p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="glass-card p-3 md:p-3.5 rounded-xl md:rounded-2xl flex items-center gap-3">
             <i class="fa-solid fa-chart-line text-cyan-400 text-base"></i> Profit/Loss Analytics
           </div>
         </div>
 
-        <div class="flex flex-wrap gap-4 pt-4">
-          <button onclick="openAuthModal('register')" class="px-7 py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-sm transition shadow-xl shadow-emerald-500/20">
+        <div class="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-4">
+          <button onclick="openAuthModal('register')" class="w-full sm:w-auto px-6 md:px-7 py-3.5 md:py-4 rounded-xl md:rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs md:text-sm transition shadow-xl shadow-emerald-500/20 text-center">
             Get Started Free <i class="fa-solid fa-arrow-right ml-2"></i>
           </button>
-          <button onclick="openAuthModal('login')" class="px-7 py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm border border-slate-800 transition">
+          <button onclick="openAuthModal('login')" class="w-full sm:w-auto px-6 md:px-7 py-3.5 md:py-4 rounded-xl md:rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs md:text-sm border border-slate-800 transition text-center">
             Sign In to Terminal
           </button>
         </div>
       </div>
 
       <!-- Lead Architect Profile Card -->
-      <div class="lg:col-span-5">
-        <div class="relative glass-card glow-emerald rounded-3xl p-8 border border-slate-800 space-y-6">
-          <div class="absolute -top-3.5 -right-3.5 bg-emerald-500/20 text-emerald-400 text-[10px] uppercase font-extrabold tracking-widest px-4 py-1.5 rounded-full border border-emerald-500/40 backdrop-blur-md">
+      <div class="lg:col-span-5 mt-4 lg:mt-0">
+        <div class="relative glass-card glow-emerald rounded-2xl md:rounded-3xl p-5 md:p-8 border border-slate-800 space-y-4 md:space-y-6">
+          <div class="static sm:absolute -top-3.5 -right-3.5 bg-emerald-500/20 text-emerald-400 text-[10px] uppercase font-extrabold tracking-widest px-3 py-1 md:px-4 md:py-1.5 rounded-full border border-emerald-500/40 backdrop-blur-md inline-block">
             Lead System Architect
           </div>
 
-          <div class="flex items-center gap-5">
-            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center text-slate-950 text-2xl font-black shadow-lg shadow-emerald-500/30">
+          <div class="flex items-center gap-4 md:gap-5 pt-2 sm:pt-0">
+            <div class="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center text-slate-950 text-xl md:text-2xl font-black shadow-lg shadow-emerald-500/30 shrink-0">
               MS
             </div>
             <div>
-              <h3 class="text-xl font-black text-white">Muhammad Shoaib</h3>
+              <h3 class="text-lg md:text-xl font-black text-white">Muhammad Shoaib</h3>
               <p class="text-xs text-emerald-400 font-semibold">Software & ERP Systems Engineer</p>
-              <p class="text-[11px] text-slate-400 mt-1">University of Sindh, Jamshoro (2K23/SWE/113)</p>
+              <p class="text-[10px] md:text-[11px] text-slate-400 mt-0.5">University of Sindh, Jamshoro (2K23/SWE/113)</p>
             </div>
           </div>
 
-          <div class="space-y-3 pt-4 border-t border-slate-800/80 text-xs text-slate-300">
+          <div class="space-y-2.5 md:space-y-3 pt-3 md:pt-4 border-t border-slate-800/80 text-xs text-slate-300">
             <div class="flex items-center gap-3">
-              <i class="fa-brands fa-whatsapp text-emerald-400 text-base w-5"></i>
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-base w-5 text-center"></i>
               <a href="https://wa.me/qr/H3BTEJWWIVN4A1?s=r" target="_blank" class="font-bold text-emerald-400 hover:underline">WhatsApp: 03327809739</a>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-phone text-emerald-400 text-base w-5"></i>
-              <span>Direct Hotline: 03327809739 / 03428027339</span>
+              <i class="fa-solid fa-phone text-emerald-400 text-base w-5 text-center"></i>
+              <span class="break-all">Direct Hotline: 03327809739 / 03428027339</span>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-envelope text-emerald-400 text-base w-5"></i>
-              <span>shoaib.arain@gmail.com | Jhuddo, Sindh</span>
+              <i class="fa-solid fa-envelope text-emerald-400 text-base w-5 text-center"></i>
+              <span class="break-all">shoaib.arain@gmail.com | Jhuddo, Sindh</span>
             </div>
           </div>
         </div>
@@ -140,63 +143,63 @@
     </section>
 
     <!-- Deep System Feature Matrix -->
-    <section class="border-t border-slate-800/60 px-6 py-20 bg-slate-950/60 relative">
-      <div class="max-w-7xl mx-auto space-y-12">
-        <div class="text-center max-w-2xl mx-auto space-y-3">
-          <h3 class="text-3xl font-black text-white tracking-tight">Medora Core Capabilities</h3>
+    <section class="border-t border-slate-800/60 px-4 md:px-6 py-12 md:py-20 bg-slate-950/60 relative">
+      <div class="max-w-7xl mx-auto space-y-8 md:space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-2 md:space-y-3">
+          <h3 class="text-2xl md:text-3xl font-black text-white tracking-tight">Medora Core Capabilities</h3>
           <p class="text-slate-400 text-xs md:text-sm">Engineered to optimize inventory control, billing accuracy, expiry management, and business revenue.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="glass-card glass-card-hover p-6 rounded-3xl space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold text-xl"><i class="fa-solid fa-receipt"></i></div>
-            <h4 class="font-extrabold text-white text-base">Perfect Dynamic Receipts</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          <div class="glass-card glass-card-hover p-5 md:p-6 rounded-2xl md:rounded-3xl space-y-2.5 md:space-y-3">
+            <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold text-lg md:text-xl"><i class="fa-solid fa-receipt"></i></div>
+            <h4 class="font-extrabold text-white text-sm md:text-base">Perfect Dynamic Receipts</h4>
             <p class="text-slate-400 text-xs leading-relaxed">Auto-height thermal printing removes blank paper waste. Features clean item spacing, discount math, and net totals.</p>
           </div>
 
-          <div class="glass-card glass-card-hover p-6 rounded-3xl space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-xl"><i class="fa-solid fa-triangle-exclamation"></i></div>
-            <h4 class="font-extrabold text-white text-base">30-Day Expiry Warnings</h4>
+          <div class="glass-card glass-card-hover p-5 md:p-6 rounded-2xl md:rounded-3xl space-y-2.5 md:space-y-3">
+            <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-lg md:text-xl"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <h4 class="font-extrabold text-white text-sm md:text-base">30-Day Expiry Warnings</h4>
             <p class="text-slate-400 text-xs leading-relaxed">Track medicine batch expiry dates with automatic visual alert banners for medicines expiring within 30 days.</p>
           </div>
 
-          <div class="glass-card glass-card-hover p-6 rounded-3xl space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center font-bold text-xl"><i class="fa-solid fa-chart-line"></i></div>
-            <h4 class="font-extrabold text-white text-base">Profit & Loss Analytics</h4>
+          <div class="glass-card glass-card-hover p-5 md:p-6 rounded-2xl md:rounded-3xl space-y-2.5 md:space-y-3">
+            <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center font-bold text-lg md:text-xl"><i class="fa-solid fa-chart-line"></i></div>
+            <h4 class="font-extrabold text-white text-sm md:text-base">Profit & Loss Analytics</h4>
             <p class="text-slate-400 text-xs leading-relaxed">Calculate total distributor investments, gross revenue, cost of sold goods, and view live interactive Chart.js bar graphs.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="mt-auto border-t border-slate-900 px-6 py-6 text-center text-xs text-slate-500">
+    <footer class="mt-auto border-t border-slate-900 px-4 md:px-6 py-4 md:py-6 text-center text-xs text-slate-500">
       <p>© 2026 Medora ERP. Engineered by <span class="font-bold text-slate-300">Muhammad Shoaib</span></p>
     </footer>
   </div>
 
   <!-- ================= AUTH MODAL (LOGIN / REGISTER) ================= -->
-  <div id="authModal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 hidden">
-    <div class="bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl w-full max-w-md p-6 relative text-white">
+  <div id="authModal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-3 md:p-4 hidden">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl md:rounded-3xl shadow-2xl w-full max-w-md p-5 md:p-6 relative text-white max-h-[90vh] overflow-y-auto">
       <button onclick="document.getElementById('authModal').classList.add('hidden')" class="absolute top-4 right-4 text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
       
       <div class="text-center mb-4">
-        <h3 class="font-extrabold text-xl text-white">Medora Sign In</h3>
+        <h3 class="font-extrabold text-lg md:text-xl text-white">Medora Sign In</h3>
         <p class="text-xs text-emerald-400 font-bold">Smarter Pharmacy. Better Business</p>
       </div>
 
-      <div class="flex border-b border-slate-800 mb-6 text-xs font-bold">
-        <button id="modalTabLogin" onclick="switchAuthTab('login')" class="flex-1 py-3 border-b-2 border-emerald-400 text-emerald-400">Pharmacy Sign In</button>
-        <button id="modalTabRegister" onclick="switchAuthTab('register')" class="flex-1 py-3 border-b-2 border-transparent text-slate-400">Register Account</button>
+      <div class="flex border-b border-slate-800 mb-5 text-xs font-bold">
+        <button id="modalTabLogin" onclick="switchAuthTab('login')" class="flex-1 py-2.5 border-b-2 border-emerald-400 text-emerald-400">Pharmacy Sign In</button>
+        <button id="modalTabRegister" onclick="switchAuthTab('register')" class="flex-1 py-2.5 border-b-2 border-transparent text-slate-400">Register Account</button>
       </div>
 
-      <form id="loginForm" onsubmit="handleLogin(event)" class="space-y-4">
+      <form id="loginForm" onsubmit="handleLogin(event)" class="space-y-3.5">
         <div>
           <label class="block text-xs font-bold text-slate-400 uppercase mb-1">Phone Number</label>
-          <input type="text" id="loginPhone" required placeholder="03001234567" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm focus:border-emerald-500 outline-none" />
+          <input type="text" id="loginPhone" required placeholder="03001234567" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm focus:border-emerald-500 outline-none text-white" />
         </div>
         <div>
           <label class="block text-xs font-bold text-slate-400 uppercase mb-1">Password</label>
-          <input type="password" id="loginPassword" required placeholder="••••••••" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm focus:border-emerald-500 outline-none" />
+          <input type="password" id="loginPassword" required placeholder="••••••••" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm focus:border-emerald-500 outline-none text-white" />
         </div>
         <div class="flex justify-between items-center text-xs">
           <button type="button" onclick="triggerForgotPassword()" class="text-emerald-400 hover:underline font-bold">Forgot Password?</button>
@@ -217,15 +220,15 @@
   </div>
 
   <!-- ================= SECRET SUPER ADMIN LOGIN MODAL ================= -->
-  <div id="secretAdminModal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4 hidden">
-    <div class="bg-slate-900 rounded-3xl shadow-2xl w-full max-w-md p-6 relative border border-amber-500/30 text-white">
+  <div id="secretAdminModal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-3 md:p-4 hidden">
+    <div class="bg-slate-900 rounded-2xl md:rounded-3xl shadow-2xl w-full max-w-md p-5 md:p-6 relative border border-amber-500/30 text-white">
       <button onclick="document.getElementById('secretAdminModal').classList.add('hidden')" class="absolute top-4 right-4 text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
-      <div class="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-4 text-xs text-amber-300 mb-4">
+      <div class="bg-amber-500/10 border border-amber-500/20 rounded-xl md:rounded-2xl p-3.5 md:p-4 text-xs text-amber-300 mb-4">
         <h3 class="font-extrabold text-sm"><i class="fa-solid fa-shield-halved mr-1 text-amber-400"></i> Medora Super Admin Center</h3>
         <p class="text-[11px] text-amber-200/80 mt-0.5">Enter developer master credentials to unlock admin command node.</p>
       </div>
 
-      <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+      <form onsubmit="handleAdminLogin(event)" class="space-y-3.5">
         <div>
           <label class="block text-xs font-bold text-slate-400 uppercase mb-1">Username</label>
           <input type="text" id="adminUser" required placeholder="Username" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm text-white" />
@@ -242,15 +245,15 @@
   </div>
 
   <!-- ================= MONTHLY SUBSCRIPTION PAYMENT MODAL ================= -->
-  <div id="paymentModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 hidden">
-    <div class="bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl w-full max-w-md p-6 space-y-4 text-white">
+  <div id="paymentModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-3 md:p-4 hidden">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl md:rounded-3xl shadow-2xl w-full max-w-md p-5 md:p-6 space-y-4 text-white max-h-[90vh] overflow-y-auto">
       <div class="flex justify-between items-center border-b border-slate-800 pb-3">
-        <h3 class="font-extrabold text-slate-100"><i class="fa-solid fa-wallet mr-2 text-emerald-400"></i> Submit Monthly Fee (Rs. 3,000)</h3>
+        <h3 class="font-extrabold text-sm md:text-base text-slate-100"><i class="fa-solid fa-wallet mr-2 text-emerald-400"></i> Submit Monthly Fee (Rs. 3,000)</h3>
         <button onclick="document.getElementById('paymentModal').classList.add('hidden')" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
       </div>
-      <div class="bg-emerald-500/10 border border-emerald-500/20 p-4 rounded-2xl text-xs space-y-1 text-emerald-200">
+      <div class="bg-emerald-500/10 border border-emerald-500/20 p-3.5 md:p-4 rounded-xl md:rounded-2xl text-xs space-y-1 text-emerald-200">
         <p class="font-extrabold uppercase">Transfer Rs. 3,000 To:</p>
-        <div class="flex justify-between font-mono font-bold text-sm bg-slate-950 p-2.5 rounded-xl border border-emerald-500/30 mt-1">
+        <div class="flex flex-col sm:flex-row sm:justify-between font-mono font-bold text-xs md:text-sm bg-slate-950 p-2.5 rounded-xl border border-emerald-500/30 mt-1 gap-1">
           <span>EasyPaisa / JazzCash:</span>
           <span class="text-emerald-400">03428027339</span>
         </div>
@@ -282,35 +285,35 @@
 
   <!-- ================= NORMAL PHARMACY APP SHELL ================= -->
   <div id="appShell" class="flex flex-col h-screen overflow-hidden hidden bg-slate-950 text-slate-100">
-    <header class="bg-slate-900 border-b border-slate-800 shadow-md flex items-center justify-between px-6 py-3.5 z-30 shrink-0">
-      <div class="flex items-center gap-4">
+    <header class="bg-slate-900 border-b border-slate-800 shadow-md flex items-center justify-between px-3 md:px-6 py-2.5 md:py-3.5 z-30 shrink-0">
+      <div class="flex items-center gap-2 md:gap-4">
         <button id="toggleSidebarBtn" class="p-2 rounded-xl hover:bg-slate-800 transition text-slate-300">
-          <i class="fa-solid fa-bars text-lg"></i>
+          <i class="fa-solid fa-bars text-base md:text-lg"></i>
         </button>
-        <div class="flex items-center gap-3">
-          <img src="images/logo.png" onerror="this.src='Medora Medical Brand Logo.png'" alt="Medora Logo" class="w-10 h-10 rounded-xl object-cover border border-emerald-500/30" />
+        <div class="flex items-center gap-2 md:gap-3">
+          <img src="images/logo.png" onerror="this.src='Medora Medical Brand Logo.png'" alt="Medora Logo" class="w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl object-cover border border-emerald-500/30" />
           <div>
-            <h1 id="pharmacyNameHeader" class="font-extrabold text-base leading-tight text-white">Medora ERP</h1>
-            <p id="pharmacyDetailsHeader" class="text-xs text-emerald-400 font-bold">Smarter Pharmacy. Better Business</p>
+            <h1 id="pharmacyNameHeader" class="font-extrabold text-xs md:text-base leading-tight text-white">Medora ERP</h1>
+            <p id="pharmacyDetailsHeader" class="text-[9px] md:text-xs text-emerald-400 font-bold hidden sm:block">Smarter Pharmacy. Better Business</p>
           </div>
         </div>
       </div>
 
-      <div class="flex items-center gap-3">
-        <button onclick="openPaymentModal()" class="text-xs bg-slate-800 hover:bg-slate-700 px-3.5 py-2 rounded-xl font-bold border border-slate-700 text-slate-200">
-          <i class="fa-solid fa-receipt mr-1.5 text-emerald-400"></i> Pay Fee (Rs. 3000)
+      <div class="flex items-center gap-2 md:gap-3">
+        <button onclick="openPaymentModal()" class="text-[11px] md:text-xs bg-slate-800 hover:bg-slate-700 px-2.5 md:px-3.5 py-1.5 md:py-2 rounded-lg md:rounded-xl font-bold border border-slate-700 text-slate-200">
+          <i class="fa-solid fa-receipt mr-1 text-emerald-400"></i> <span class="hidden sm:inline">Pay Fee </span>(Rs. 3000)
         </button>
-        <button onclick="handleLogout()" class="text-xs bg-slate-800 hover:bg-slate-700 px-3.5 py-2 rounded-xl font-bold border border-slate-700 text-slate-200">
-          <i class="fa-solid fa-right-from-bracket mr-1.5 text-rose-400"></i> Logout
+        <button onclick="handleLogout()" class="text-[11px] md:text-xs bg-slate-800 hover:bg-slate-700 px-2.5 md:px-3.5 py-1.5 md:py-2 rounded-lg md:rounded-xl font-bold border border-slate-700 text-slate-200">
+          <i class="fa-solid fa-right-from-bracket text-rose-400 sm:mr-1"></i> <span class="hidden sm:inline">Logout</span>
         </button>
       </div>
     </header>
 
     <div class="flex flex-1 overflow-hidden relative">
-      <div id="subscriptionLockout" class="absolute inset-0 bg-slate-950/90 backdrop-blur-md z-40 flex items-center justify-center p-6 hidden">
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl w-full max-w-md p-8 text-center space-y-4">
-          <div class="w-14 h-14 bg-rose-500/10 text-rose-400 rounded-full flex items-center justify-center mx-auto text-2xl font-bold border border-rose-500/20"><i class="fa-solid fa-lock"></i></div>
-          <h3 class="text-xl font-black text-white" id="lockoutTitle">Subscription Required</h3>
+      <div id="subscriptionLockout" class="absolute inset-0 bg-slate-950/90 backdrop-blur-md z-40 flex items-center justify-center p-4 md:p-6 hidden">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl md:rounded-3xl shadow-2xl w-full max-w-md p-6 md:p-8 text-center space-y-4">
+          <div class="w-12 h-12 md:w-14 md:h-14 bg-rose-500/10 text-rose-400 rounded-full flex items-center justify-center mx-auto text-xl md:text-2xl font-bold border border-rose-500/20"><i class="fa-solid fa-lock"></i></div>
+          <h3 class="text-lg md:text-xl font-black text-white" id="lockoutTitle">Subscription Required</h3>
           <p class="text-xs text-slate-400" id="lockoutDesc">Transfer Rs. 3,000 to <span class="font-bold text-emerald-400 font-mono">03428027339</span> via EasyPaisa/JazzCash and submit TRX ID.</p>
           <button onclick="openPaymentModal()" class="w-full bg-emerald-500 text-slate-950 font-extrabold py-3 rounded-xl">Submit Payment Details</button>
         </div>
@@ -345,7 +348,7 @@
         </div>
       </aside>
 
-      <main class="flex-1 overflow-y-auto p-6 bg-slate-950 text-slate-100 relative" id="mainContainer">
+      <main class="flex-1 overflow-y-auto p-4 md:p-6 bg-slate-950 text-slate-100 relative" id="mainContainer">
         <div id="view-dashboard" class="view-panel hidden"></div>
         <div id="view-billing" class="view-panel hidden"></div>
         <div id="view-salesHistory" class="view-panel hidden"></div>
@@ -359,21 +362,21 @@
 
   <!-- ================= SUPER ADMIN COMMAND CENTER SHELL ================= -->
   <div id="superAdminShell" class="flex flex-col h-screen overflow-hidden hidden bg-slate-950 text-white">
-    <header class="bg-slate-900 border-b border-slate-800 px-6 py-4 flex items-center justify-between z-30 shrink-0">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400">
-          <i class="fa-solid fa-shield-halved text-2xl"></i>
+    <header class="bg-slate-900 border-b border-slate-800 px-4 md:px-6 py-3 md:py-4 flex items-center justify-between z-30 shrink-0">
+      <div class="flex items-center gap-2 md:gap-3">
+        <div class="w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400">
+          <i class="fa-solid fa-shield-halved text-lg md:text-2xl"></i>
         </div>
         <div>
-          <h1 class="font-extrabold text-lg text-white">Medora Super Admin Center</h1>
-          <p class="text-xs text-amber-400 font-bold">Master Control Node | Developer: Muhammad Shoaib</p>
+          <h1 class="font-extrabold text-sm md:text-lg text-white">Medora Super Admin Center</h1>
+          <p class="text-[10px] md:text-xs text-amber-400 font-bold hidden sm:block">Master Control Node | Developer: Muhammad Shoaib</p>
         </div>
       </div>
-      <button onclick="handleLogout()" class="text-xs bg-slate-800 hover:bg-slate-700 px-3.5 py-2 rounded-xl border border-slate-700 font-bold">
-        <i class="fa-solid fa-right-from-bracket mr-1 text-rose-400"></i> Exit Admin Mode
+      <button onclick="handleLogout()" class="text-xs bg-slate-800 hover:bg-slate-700 px-3 py-2 rounded-xl border border-slate-700 font-bold">
+        <i class="fa-solid fa-right-from-bracket mr-1 text-rose-400"></i> Exit
       </button>
     </header>
-    <main class="flex-1 p-6 overflow-y-auto bg-slate-950 text-slate-200" id="adminMainContainer"></main>
+    <main class="flex-1 p-4 md:p-6 overflow-y-auto bg-slate-950 text-slate-200" id="adminMainContainer"></main>
   </div>
 
   <!-- JS SCRIPT LINK -->
